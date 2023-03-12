@@ -79,7 +79,7 @@ const change = evt => {
         <div id="name">
           <h1>Build Your Own Pizza</h1>
           <input id="name-input" type="text" name='name' placeholder="Enter You Name" onChange={change} value={pizza.name}/>
-          <p>{errors.user}</p>
+          <p>{errors.name}</p>
         </div>
        
     
