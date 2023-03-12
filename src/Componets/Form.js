@@ -78,7 +78,7 @@ const change = evt => {
     <form onSubmit={submit} id="pizza-form">
         <div id="name">
           <h1>Build Your Own Pizza</h1>
-          <input type="text" name='name' placeholder="Enter You Name" onChange={change} value={pizza.name}/>
+          <input id="name-input" type="text" name='name' placeholder="Enter You Name" onChange={change} value={pizza.name}/>
           <p>{errors.user}</p>
         </div>
        
