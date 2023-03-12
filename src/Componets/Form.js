@@ -32,7 +32,7 @@ const [pizza, setPizza] = useState ({size:"", choice:"", switch:false, special:"
 
 const [disabled, setDisabled] = useState(true)
 const [errors, setErrors] = useState ({size:"", choice:"", switch:false, special:"", name:""})
-const [order, setOrder] =useState([])
+// const [order, setOrder] =useState([])
 
 
 const setPizzaErrors = (name, value) => {
@@ -58,12 +58,12 @@ const change = evt => {
 
  const submit = event => {
     event.preventDefault()
-    const newPizza = { size: pizza.size.trim(), sauce: pizza.sauce.trim()}
+    const newPizza = { name: pizza.name.trim(), size: pizza.size, sauce: pizza.sauce, special: pizza.special, peperoni: pizza.peperoni, sausaje: pizza.sausaje}
     axios.post('https://reqres.in/api/orders', newPizza)
      .then(res => {
       console.log(res.data)
-      setPizza({size:'', sauce:''})
-      setOrder([res.data, ...order ])
+    //   setPizza({size:'', sauce:''})
+    //   setOrder([res.data, ...order ])
      })
      .catch(err => { },)
     
@@ -152,7 +152,8 @@ const change = evt => {
     <div id="linea"></div>
     <div id="finish">
         <input type="number" name="number" onChange={change}/>
-        <Link to="confirmation"><button  type='submit' id="order-button" disabled={disabled} name="button">Add Order <span className="space"></span> </button></Link>
+        {/* <Link to="confirmation"><button  type='submit' id="order-button" disabled={disabled} name="button">Add Order <span className="space"></span> </button></Link> */}
+        <button  type='submit' id="order-button" disabled={disabled} name="button">Add Order <span className="space"></span> </button>
     </div>
 
 
