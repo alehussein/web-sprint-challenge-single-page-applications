@@ -7,7 +7,7 @@ import axios from 'axios'
 
 
 const schema = yup.object().shape({
-    user: yup.string().required('user is required').min(2, "name must be at least 2 characters"),
+    name: yup.string().required('user is required').min(2, "name must be at least 2 characters"),
     choice: yup.string().oneOf(['originalRed', 'garlicRanch', 'bbqSauce', 'alfredo']),
     size: yup.string().oneOf(['small', 'medium', 'large'], 'You Must Select One!'),
     switch: yup.boolean(),
@@ -28,10 +28,10 @@ const Form = () => {
 
 
 
-const [pizza, setPizza] = useState ({size:"", choice:"", switch:false, special:"", number:"", user:"", peperoni:false, sausaje:false, canadian:false, italian:false, chicker:false, onions:false})
+const [pizza, setPizza] = useState ({size:"", choice:"", switch:false, special:"", number:"", name:"", peperoni:false, sausaje:false, canadian:false, italian:false, chicker:false, onions:false})
 
 const [disabled, setDisabled] = useState(true)
-const [errors, setErrors] = useState ({size:"", choice:"", switch:false, special:"", user:""})
+const [errors, setErrors] = useState ({size:"", choice:"", switch:false, special:"", name:""})
 const [order, setOrder] =useState([])
 
 
@@ -75,10 +75,10 @@ const change = evt => {
     <h2 id="principal">Build Your Own Pizza</h2>
     <img src="https://images.pexels.com/photos/7172067/pexels-photo-7172067.jpeg" alt="pizza"/>
     
-    <form onSubmit={submit}>
+    <form onSubmit={submit} id="pizza-form">
         <div id="name">
           <h1>Build Your Own Pizza</h1>
-          <input type="text" name='user' placeholder="Enter You Name" onChange={change} value={pizza.user}/>
+          <input type="text" name='name' placeholder="Enter You Name" onChange={change} value={pizza.name}/>
           <p>{errors.user}</p>
         </div>
        

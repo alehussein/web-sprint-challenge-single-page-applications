@@ -3,7 +3,7 @@ describe('template spec', () => {
     cy.visit('http://localhost:3001/pizza/')
     })
 
-    const userInput = () => cy.get('input[name=user]');
+    const userInput = () => cy.get('input[name=name]');
     const sizeSelect = () => cy.get("select[name=size]");
     const sauceInput = () => cy.get("input[name=choice]");
     const peperoniInput = () => cy.get("input[name=peperoni]");
