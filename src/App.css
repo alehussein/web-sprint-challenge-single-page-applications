@@ -2,37 +2,359 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  
+  color: palevioletred;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header h3{
+  letter-spacing: 2.2px;
+  margin-left: 10%;
+}
+links{
+  margin-right: 10%;
+}
+header button{
+  background-color: rgba(0, 0, 0, 0);
+  border-color: palevioletred;
+  font-size: 1em;
+  /* margin: 1em; */
+  padding: 0.25em 2em;
+  border-radius: 1px;
+  
+}
+#image{
+  background-color: #282c343b;
+  background-image: url("https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: aliceblue;
+  padding: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+#image button{
+  background-color: rgba(0, 0, 0, 0);
+  border-color: palevioletred;
+  font-size: 2em;
+  font-weight: 700;
+  color: aliceblue;
+  padding: 0.25em 2em;
+  border-radius: 1px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#menuh2{
+
+  /* background-color: #61dafb; */
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+
+
+
+#menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  
   }
-  to {
-    transform: rotate(360deg);
+
+  #burguer, #sweetgreen, #starbucks{
+  /* background-color: bisque; */
+  width: 360px;
+  height: 300px;
+  text-align: center;
+  margin: 10px;
+  text-align: left;
   }
+
+
+#menu img{
+  width: 100%;
+  height: 60%;
+}
+
+#linea{
+  background-color: black;
+  height: 3px;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+/* -------- */
+
+
+#pizza{
+ display: flex;
+ flex-direction: column;
+ /* background-color: aqua; */
+ margin: auto;
+ width: 50%;
+ border: 2px solid black;
+ 
+}
+#principal{
+  text-align: center;
+}
+
+#name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pizza h1{
+ margin-left: 5%;
+ /* background-color: blue; */
+}
+
+#name input{
+  /* background-color: aquamarine; */
+  margin: auto;
+  height: 30px;
+  width: 200px;
+  font-size: large;
+  text-align: center;
+}
+
+#size-dropdown{
+  height: 30px;
+  width: 100px;
+}
+#selectDiv{
+  background-color: white;
+  padding: 3%;
+}
+
+#sizeDiv{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(209, 159, 99);
+  /* margin-left: 5%; */
+}
+#sizeDiv h2{
+  /* background-color: rgb(44, 136, 217); */
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+#size p{
+  margin-top: auto;
+  margin-left: 5%;
+  /* background-color: rgb(220, 223, 5); */
+}
+
+#sauce{
+  background-color: rgb(209, 159, 99);
+}
+
+#sauce h2{
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+#sauce p{
+  margin-top: auto;
+  margin-left: 5%;
+}
+
+#radio{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  
+}
+#sauce label{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 2%;
+  
+}
+
+#toppings{
+  background-color: rgb(209, 159, 99);
+}
+
+#toppings h2{
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+#toppings p{
+  margin-top: auto;
+  margin-left: 5%;
+}
+
+#box{
+  display: flex;
+  background-color: white;
+  
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(129, 23, 23); */
+  margin: auto;
+  width: 100%;
+  margin-left: 2%;
+  
+  
+}
+
+  #box label{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 2%;
+  /* background-color: blueviolet; */
+    
+  }
+
+  #substitute{
+    background-color: rgb(209, 159, 99);
+  }
+   
+  #substitute h2{
+    margin-bottom: auto;
+    margin-left: 5%;
+  }
+  #substitute p{
+    margin-top: auto;
+    margin-left: 5%;
+  }
+#gluten{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 2%;
+  
+  
+}
+
+#gluten label{
+  margin-top: 2%;
+}
+#gluten p{
+  /* background-color: blue; */
+  font-size: large;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: auto;
+}
+
+#intructions{
+  background-color: rgb(209, 159, 99);
+}
+
+#intructions h2{
+  margin-bottom: auto;
+  margin-left: 5%;
+  padding: 2%;
+  
+}
+section{
+  background-color: white;
+  padding: 3%;
+}
+#intructions input{
+  /* text-align: center; */
+  width: 80%;
+  margin-left: 10%;
+  font-size: large;
+  
+}
+#finish{
+  padding: 2%;
+}
+#finish button{
+  margin-left: 3%;
+  width: 85%;
+  font-size: 2rem;
+  text-align: left;
+}
+#finish input{
+  width: 10%;
+  font-size: 2rem;
+}
+.space {
+  margin-left: 50%;
+}
+
+
+
+/* ------------ */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
